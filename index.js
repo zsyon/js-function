@@ -23,16 +23,21 @@ function arkaplan() {
   document.getElementById("paragraf1").style.backgroundColor="yellow";
 }
 
+let arr = [];
+
 function arrow (nums) {
-  nums.forEach(element => {
-    if(element%2 == 0){
-      return element*2
+  nums.forEach(nums => {
+    if(nums%2 == 0){
+
+      arr.push(nums*2)
     }
     else {
-      return element*3
+      arr.push(nums*2)
     }
     
   });
+
+  return arrow
 }
 
 document.write(arrow([1,2,3,4,5]));
