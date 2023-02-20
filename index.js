@@ -37,7 +37,7 @@ function arrow (nums) {
     
   });
 
-  return arrow
+  return `[${arr}]`
 }
 
 document.write(arrow([1,2,3,4,5]));
