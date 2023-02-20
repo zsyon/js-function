@@ -9,3 +9,11 @@ function paragraf(){
   document.getElementById("paragraf").innerHTML = "HELLO WORLD!"
 }
 
+let ulDOM = document.querySelector("ul#liste")
+let liDOM = document.createElement("li");
+
+liDOM.innerHTML = "kendi"
+
+ulDOM.append(liDOM)
+
+
