@@ -5,4 +5,7 @@ function hello(){
   w.document.close();
 }
 
+function paragraf(){
+  document.getElementById("paragraf").innerHTML = "HELLO WORLD!"
+}
 
