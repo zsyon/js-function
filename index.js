@@ -9,17 +9,32 @@ function paragraf(){
   document.getElementById("paragraf").innerHTML = "HELLO WORLD!"
 }
 
-let ulDOM = document.querySelector("ul#liste")
-let liDOM = document.createElement("li");
+document.addEventListener("DOMContentLoaded", function (event) {
+  let ulDOM = document.querySelector("ul#liste");
+  let liDOM = document.createElement("li");
 
-liDOM.innerHTML = "kendi"
+  liDOM.innerHTML = "kendi";
 
-ulDOM.append(liDOM)
-
+  ulDOM.append(liDOM);
+  // copy code here
+});
 
 function arkaplan() {
   document.getElementById("paragraf1").style.backgroundColor="yellow";
 }
 
+function arrow (nums) {
+  nums.forEach(element => {
+    if(element%2 == 0){
+      return element*2
+    }
+    else {
+      return element*3
+    }
+    
+  });
+}
+
+document.write(arrow([1,2,3,4,5]));
 
 
