@@ -17,3 +17,9 @@ liDOM.innerHTML = "kendi"
 ulDOM.append(liDOM)
 
 
+function arkaplan() {
+  document.getElementById("paragraf1").style.backgroundColor="yellow";
+}
+
+
+
