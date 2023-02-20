@@ -40,6 +40,7 @@ function arrow (nums) {
   return `[${arr}]`
 }
 
+
 document.write(arrow([1,2,3,4,5]));
 
 
