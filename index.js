@@ -24,11 +24,20 @@ function arkaplan() {
   document.getElementById("paragraf1").style.backgroundColor="yellow";
 }
 
+sayi = document.getElementById("sayı").innerHTML = "100"
+
+arttır = document.getElementById("arttır")
+azalt = document.getElementById("azalt")
 
 function sayıArttır(){
-  sonuc = document.getElementById("arttır")
-  sonuc.value = Number(sonuc.value)+1
+  console.log("aaaa")
+  sayi = document.getElementById("sayı").innerHTML
+  console.log(sayi)
+  sayi = Number(sayi) + 1
+  document.getElementById("sayı").innerHTML = sayi
+  console.log(sayi)
 }
+
 
 
 function arrow (nums) {
