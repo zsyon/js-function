@@ -9,15 +9,18 @@ function paragraf(){
   document.getElementById("paragraf").innerHTML = "HELLO WORLD!"
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  let ulDOM = document.querySelector("ul#liste");
-  let liDOM = document.createElement("li");
 
-  liDOM.innerHTML = "kendi";
+document.getElementById("ekle").addEventListener("click", myFunction);
 
-  ulDOM.append(liDOM);
-  // copy code here
-});
+function myFunction(){
+  var input = document.getElementById("veri").value;
+  var ul = document.getElementById("ul#liste");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode(input));
+  ul.appendChild(li);
+}
+
+
 
 function arkaplan() {
   document.getElementById("paragraf1").style.backgroundColor="yellow";
