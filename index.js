@@ -11,7 +11,6 @@ function paragraf(){
 
 
 document.getElementById("ekle").addEventListener("click", myFunction);
-{ once: true }
 
 function myFunction() {
   var input = document.getElementById("veri").value;
