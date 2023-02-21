@@ -25,6 +25,12 @@ function arkaplan() {
 }
 
 
+function sayıArttır(){
+  sonuc = document.getElementById("arttır")
+  sonuc.value = Number(sonuc.value)+1
+}
+
+
 function arrow (nums) {
   let arr = [];
   nums.forEach(nums => {
