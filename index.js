@@ -11,16 +11,15 @@ function paragraf(){
 
 
 document.getElementById("ekle").addEventListener("click", myFunction);
+{ once: true }
 
-function myFunction(){
+function myFunction() {
   var input = document.getElementById("veri").value;
-  var ul = document.getElementById("ul#liste");
+  var ul = document.getElementById("liste");
   var li = document.createElement("li");
-  li.appendChild(document.createTextNode(input));
+  li.innerText = input;
   ul.appendChild(li);
 }
-
-
 
 function arkaplan() {
   document.getElementById("paragraf1").style.backgroundColor="yellow";
